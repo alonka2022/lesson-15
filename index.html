@@ -11,67 +11,69 @@
 
 </head>
 <body class="body">
-    <header class="header-nav">
-        <nav class="container nav__container">
-            <img class="nav__logo" src="./images/logo.svg" alt="Logo company">
-            <ul class="header-nav__list">
-                <li class="header-nav__list-item"><a class="link header__link">Home</a></li>
-                <li class="header-nav__list-item"><a class="link header__link"><svg class="header__link-icon"><use href="./icons/symbol-defs.svg#icon-number"></use></svg> Projects</a></li>
-                <li class="header-nav__list-item"><a class="link header__link">About</a></li>
-                <li class="header-nav__list-item"><a class="link header__link">Contact</a></li>
+    <header class="header">
+        <img class="header__logo" src="./images/logo.svg" alt="Logo company">
+        <nav class="container nav">
+            <ul class="nav__list">
+                <li class="nav__item"><a class="nav__link">Home</a></li>
+                <li class="nav__item"><a class="nav__link"><span class="nav__link-number">20</span> Projects</a></li>
+                <li class="nav__item"><a class="nav__link">About</a></li>
+                <li class="nav__item"><a class="nav__link">Contact</a></li>
             </ul>
         </nav>
     </header>
     <main class="main">
         <section class="hero">
             <div class="container hero__container">
-                <h1 class="title-h1 hero__title-h1">Websites&<br>Branding</h1>
-                <button class="button-scroll">SCROLL DOWN<svg class="icon button-scroll__icon">
+                <h1 class="title-h1 hero__main-title">Websites&<br>Branding</h1>
+                <div class="hero__button">
+                <a href="#projects" class="button button-scroll">SCROLL DOWN<svg class="icon button-scroll__icon">
                     <use href="./icons/symbol-defs.svg#icon-scroll"></use>
-                </svg></button>
-                <div class="hero__columns">
-                    <div class="hero__column-email">
-                        <p class="text hero__email-text">Let’s Talk</p>
-                        <a class="link hero__email-link" href="">hello@joey.co</a>
+                </svg></a>
+            </div>
+                <div class="hero__info">
+                    <div class="hero__contact-info">
+                        <h3 class="title-h3 hero__title">Let’s Talk</h3>
+                        <a class="hero__email-link" href="mailto:hello@joey.co">hello@joey.co</a>
                     </div>
-                    <div class="hero__column-greeting">
-                        <p class="text hero__column-text">Hello, I'm Joey, an online product designer focusing on brand identity, advertising, and no-code instruments.</p>
+                    <div class="hero__description">
+                        <p class="hero__greeting">Hello, I'm Joey, an online product designer focusing on brand identity, advertising, and no-code instruments.</p>
                     </div>
                 </div>
             </div>
         </section>
         <section class="projects">
-            <div class="container projects__container">
-                <div class="projects__columns">
-                    <div class="projects__column-title">
-                        <h2 class="title-h2 projects__title-h2">Projects</h2>
+            <div id="projects" class="container projects__container">
+                <div class="projects__header">
+                    <div class="projects__heading">
+                        <h2 class="title-h2">Projects</h2>
                         <p class="text">As a seasoned creator of contemporary, user-friendly web designs and digital solutions, I aim to assist you in constructing the brand of your fantasies.</p>
                     </div>
-                    <div>
-                        <a href="" class="link projects__link">More<svg class="icon projects__icon">
+                    <div class="projects__button-container">
+                        <a href="" class="projects__link">More<svg class="projects__icon">
                             <use href="./icons/symbol-defs.svg#icon-projects"></use>
                         </svg></a>
                     </div>
                 </div>
-                <div class="container__items-projects">
+                <div class="projects__list">
                     <div class="projects__item">
                         <img class="projects__img" src="./images/img-crtly.png" width="592" height="500" alt="image crtly">
-                        <h3 class="title-h3 projects__title-h3">Crtly</h3>
+                        <h3 class="title-h3">Crtly</h3>
                         <p class="text">Mobile App</p>
                     </div>
                     <div class="projects__item">
                         <img class="projects__img" src="./images/img-tansto.png" width="592" height="500" alt="image tansto">
-                        <h3 class="title-h3 projects__title-h3">Tansto</h3>
+                        <h3 class="title-h3">Tansto</h3>
                         <p class="text">Web Design</p>
                     </div>
                     <div class="projects__item">
                         <img class="projects__img" src="./images/img-senta.png" width="592" height="500" alt="image senta">
-                        <h3 class="title-h3 projects__title-h3">Senta</h3>
+                        <h3 class="title-h3">Senta</h3>
                         <p class="text">Mobile App & Branding</p>
                     </div>
                     <div class="projects__item">
                         <img class="projects__img" src="./images/img-crint.png" width="592" height="500" alt="image crint">
-                        <h3 class="title-h3 projects__title-h3">Crint</h3>
+                        <h3 class="title-h3">Crint</h3>
                         <p class="text">Mobile App</p>
                     </div>
                 </div>
@@ -79,60 +81,60 @@
         </section>
             <section class="expertise">
                 <div class="container expertise__container">
-                    <h2 class="title-h2 expertise__title-h2">Expertise</h2>
+                    <h2 class="title-h2 expertise__title">Expertise</h2>
                         <div class="expertise__list">
-                            <div class="expertise__list-item">
-                                <h3 class="title-h3 expertise__title-h3">Branding</h3>
+                            <div class="expertise__item">
+                                <h3 class="title-h3 expertise__subtitle">Branding</h3>
                                 <p class="text">Collaborating closely, we'll develop an impactful brand identity for your emerging enterprise. The full spectrum of brand analysis and design is addressed, culminating in a visually stunning, evergreen logo concept.</p>
                             </div>
-                            <div class="expertise__list-item">
-                                <h3 class="title-h3 expertise__title-h3">UX Design</h3>
+                            <div class="expertise__item">
+                                <h3 class="title-h3 expertise__subtitle">UX Design</h3>
                                 <p class="text">I comprehend and resolve digital product issues using a user-focused methodology. Investigation, compassion, and visual conveyance are a few techniques I apply to captivate and involve your users while fulfilling your business requirements.</p>
                             </div>
-                            <div class="expertise__list-item">
-                                <h3 class="title-h3 expertise__title-h3">UI Design</h3>
+                            <div class="expertise__item">
+                                <h3 class="title-h3 expertise__subtitle">UI Design</h3>
                                 <p class="text">I create efficient, adaptable, and engaging websites. No predefined patterns. No sluggish, complex code. Webflow forms the foundation of my web development approach. I employ it to provide safe, top-notch bespoke websites.</p>
                             </div>
-                            <div class="expertise__list-item">
-                                <h3 class="title-h3 expertise__title-h3">Development</h3>
+                            <div class="expertise__item">
+                                <h3 class="title-h3 expertise__subtitle">Development</h3>
                                 <p class="text">I create user-friendly, adaptive, engaging websites. No cookie-cutters. No cumbersome, complex coding. Webflow forms the foundation of my web development approach. I employ it to produce safe, top-notch personalized websites.</p>
                             </div>
                         </div>
                     </div>
             </section>
-                <div class="rectangle__container">
-                    <p class="rectangle__text">visual design for digital experiences</p>
+                <div class="animation">
+                    <p class="animation__text">visual design for digital experiences</p>
                 </div>
             <section class="testimonials">
                 <div class="container testimonials__container">
-                    <div class="testimonials__column-title">
-                    <h2 class="title-h2 testimonials__title-h2">Testimonials</h2>
-                    <p class="text testimonials__text">“Joey is a remarkable artist. He grasps abstract ideas and transforms them into exceptional visuals. Throughout the years, I've witnessed him produce everything from small symbols to comprehensive adaptive web pages. He has crafted clothing items like tees and caps, promotional products, and professional literature.”</p>
+                    <div class="testimonials__heading">
+                    <h2 class="title-h2 testimonials__title">Testimonials</h2>
+                    <p class="testimonials__heading-text">“Joey is a remarkable artist. He grasps abstract ideas and transforms them into exceptional visuals. Throughout the years, I've witnessed him produce everything from small symbols to comprehensive adaptive web pages. He has crafted clothing items like tees and caps, promotional products, and professional literature.”</p>
                     </div>
-                    <div class="testimonials__column-text">
-                       <h3 class="title-h3 testimonials__title-h3">Chris Ellington</h3> 
+                    <div class="testimonials__author">
+                       <h3 class="title-h3">Chris Ellington</h3> 
                        <p class="text">Product Lead,Gatha.</p>
                     </div>
                 </div>
             </section>
-            <footer class="footer">
-                <div class="container footer__container">
-                    <div class="footer__email-container">
-                        <h2 class="title-h2 footer__title-h2">Let’s talk!</h2>
-                        <a href="" class="link footer__link-email">hello@joey.co<svg class="icon icon-email">
-                            <use href="./icons/symbol-defs.svg#icon-email"></use>
-                        </svg></a>
-                    </div>
-                <div class="footer__text-container">
-                        <p class="footer__text">2023 © — Made by Djectstudio</p>
-                    <div class="footer__link-container">
-                        <a class="link footer__link" href="">Dribbble</a>
-                        <a class="link footer__link" href="">Instagram</a>
-                        <a class="link footer__link" href="">LinkedIn</a>
-                    </div>
-                </div>
-                </div>
-            </footer>
     </main>
+    <footer class="footer">
+        <div class="container footer__container">
+            <div class="footer__email-container">
+                <h2 class="footer__title">Let’s talk!</h2>
+                <a href="mailto:hello@joey.co" class="button footer__link-email">hello@joey.co<svg class="icon icon-email">
+                    <use href="./icons/symbol-defs.svg#icon-email"></use>
+                </svg></a>
+            </div>
+        <div class="footer__text-container">
+                <p class="footer__text">2023 © — Made by Djectstudio</p>
+            <div class="footer__links">
+                <a class="footer__link" href="">Dribbble</a>
+                <a class="footer__link" href="">Instagram</a>
+                <a class="footer__link" href="">LinkedIn</a>
+            </div>
+        </div>
+        </div>
+    </footer>
 </body>
 </html>
